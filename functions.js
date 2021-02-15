@@ -5,10 +5,6 @@ function findLongestString(arr) { let longestStringArr = arr.sort((a, b) => a.le
 
 console.log(findLongestString(arr))
 
-module.exports = findLongestString;
-
-
-
 // Ülesanne 2 //
 function checkTheEnding(str, target){
   if ( str === ""){
@@ -34,6 +30,6 @@ const fetchUser = async (userId) =>
     })
     .catch((err) => "error");
 
-module.exports = fetchUser;
+module.exports = {fetchUser, checkTheEnding, findLongestString };
 
 

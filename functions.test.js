@@ -1,6 +1,8 @@
-const findLongestString = require("./functions.js");
-const fetchUser = require("./functions.js");
-const checkTheEnding = require("./functions.js");
+const {
+  findLongestString,
+  checkTheEnding,
+  fetchUser,
+} = require("./functions.js");
 
 test("array", () => {
     expect(findLongestString(['welcome' ,'hey', 'hello'])).toBe('welcome');
