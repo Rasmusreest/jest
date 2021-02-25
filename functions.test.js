@@ -10,9 +10,9 @@ test("array", () => {
 
 
 test("strings", () => {
-  expect(checkTheEnding(['welcome', 'ome']).toBe(true));
-  expect(checkTheEnding(['welcome', 'end']).toBe(false));
-  expect(checkTheEnding(['', 'end']).toBe('Both strings are required'));
+  expect(checkTheEnding('welcome', 'ome')).toBe(true);
+  expect(checkTheEnding('welcome', 'end')).toBe(false);
+  expect(checkTheEnding('', 'end')).toBe('Both strings are required');
 });
 
 test("fetched user's name should be Clementine Bauch", async () => {
